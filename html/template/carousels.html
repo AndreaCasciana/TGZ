@@ -1,0 +1,1262 @@
+<div id="carousels" class="m-t-100">
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide mx-auto" data-bs-ride="carousel">
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner rounded-3">
+            <div class="carousel-item active">
+                <a href="" onclick="displayInformation()">
+                    <img id="imgDemo1" src="https://images3.alphacoders.com/184/184447.jpg" data-ng-click="selectGame($event)" alt="game1" class="d-block" style="width:100%">
+                </a>
+                <div class="carousel-caption rounded-3 shadow">
+                    <h3>The Elder Scrolls V: Skyrim Anniversary Edition</h3>
+                    <p class="carousel-desc">Winner of more than 200 GOTY awards</p>
+                    <p id="idDemo1" class="card-title">472</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="" onclick="displayInformation()">
+                    <img id="imgDemo2" src="https://www.roadtovr.com/wp-content/uploads/2020/09/minecraft-v.jpg" data-ng-click="selectGame($event)" alt="game1" class="d-block" style="width:100%">
+                </a>
+                <div class="carousel-caption rounded-3 shadow">
+                    <h3>Minecraft</h3>
+                    <p class="carousel-desc">The world is yours for the making</p>
+                    <p id="idDemo2" class="card-title">121</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="" onclick="displayInformation()">
+                    <img id="imgDemo3"  src="https://cdn.cloudflare.steamstatic.com/steam/apps/912540/ss_3e430735c6f343a8c876859fe9d10da63c3111c0.1920x1080.jpg?t=1582764558"  data-ng-click="selectGame($event)" alt="game3" class="d-block" style="width:100%">
+                </a>
+                <div class="carousel-caption rounded-3 shadow">
+                    <h3>Monster Hunter World</h3>
+                    <p class="carousel-desc">Battle gigantic monsters in epic locales</p>
+                    <p id="idDemo3" class="card-title">36926</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div id="FPS"  class="container my-4">
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-bs-ride="carousel">
+            <div class="container-fluid mt-3">
+                <h3  id="titleCarousel1" class="gallery-title">Shooters</h3>
+            </div>
+            <!--Controls-->
+            <div id="controlFPS" class="controls-top">
+                <button class="carousel-control-prev ctrl-prev" type="button" data-bs-target="#multi-item-example" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next ctrl-next" type="button" data-bs-target="#multi-item-example" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <!--/.Controls-->
+
+
+            <!--Slides-->
+            <div class="carousel-inner col-10 mx-auto" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="row">
+
+                        <div class="col-md-2">
+
+                            <div  id="cardFPS1" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgFPS1" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleFPS1" class="card-title"></p>
+                                <p id="idFPS1" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardFPS2" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgFPS2" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleFPS2" class="card-title"></p>
+                                <p id="idFPS2" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardFPS3" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgFPS3" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleFPS3" class="card-title"></p>
+                                <p id="idFPS3" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardFPS4" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgFPS4"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleFPS4" class="card-title"></p>
+                                <p id="idFPS4" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardFPS5"  data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgFPS5"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleFPS5" class="card-title"></p>
+                                <p id="idFPS5" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardFPS6" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgFPS6"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleFPS6" class="card-title"></p>
+                                <p id="idFPS6" class="card-title"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div  id="cardFPS7" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgFPS7"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleFPS7" class="card-title"></p>
+                                <p id="idFPS7" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardFPS8" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgFPS8"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleFPS8" class="card-title"></p>
+                                <p id="idFPS8" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardFPS9"  data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgFPS9" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleFPS9" class="card-title"></p>
+                                <p id="idFPS9" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardFPS10"  data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgFPS10" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleFPS10" class="card-title"></p>
+                                <p id="idFPS10" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardFPS11"  data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgFPS11" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleFPS11" class="card-title"></p>
+                                <p id="idFPS11" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardFPS12"  data-ng-click="selectGame($event)"  class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgFPS12" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleFPS12" class="card-title"></p>
+                                <p id="idFPS12" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div  id="cardFPS13"  data-ng-click="selectGame($event)"  class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgFPS13" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleFPS13" class="card-title"></p>
+                                <p id="idFPS13" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardFPS14"  data-ng-click="selectGame($event)"  class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgFPS14" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleFPS14" class="card-title"></p>
+                                <p id="idFPS14" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardFPS15" data-ng-click="selectGame($event)"  class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgFPS15" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleFPS15" class="card-title"></p>
+                                <p id="idFPS15" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardFPS16" data-ng-click="selectGame($event)"  class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgFPS16" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleFPS16" class="card-title"></p>
+                                <p id="idFPS16" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardFPS17" data-ng-click="selectGame($event)"   class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgFPS17" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleFPS17" class="card-title"></p>
+                                <p id="idFPS17" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardFPS18"  data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgFPS18" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleFPS18" class="card-title"></p>
+                                <p id="idFPS18" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Third slide-->
+
+            </div>
+            <!--/.Slides-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+
+    <div id="Platformer" class="container my-4">
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example2" class="carousel slide carousel-multi-item" data-bs-ride="carousel">
+            <div class="container-fluid mt-3">
+                <h3 id="titleCarousel2" class="gallery-title">Platformers</h3>
+            </div>
+            <!--Controls-->
+            <div id="controlPlatformer" class="controls-top">
+                <button class="carousel-control-prev ctrl-prev" type="button" data-bs-target="#multi-item-example2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next ctrl-next" type="button" data-bs-target="#multi-item-example2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <!--/.Controls-->
+
+
+            <!--Slides-->
+            <div class="carousel-inner col-10 mx-auto" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div  id="cardPlatformer1" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgPlatformer1" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer1" class="card-title">Card title</p>
+                                <p id="idPlatformer1" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer2" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgPlatformer2" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer2" class="card-title">Card title</p>
+                                <p id="idPlatformer2" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer3" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgPlatformer3" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer3" class="card-title">Card title</p>
+                                <p id="idPlatformer3" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer4" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgPlatformer4"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer4" class="card-title">Card title</p>
+                                <p id="idPlatformer4" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer5" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgPlatformer5"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer5" data-ng-click="selectGame($event)" class="card-title">Card title</p>
+                                <p id="idPlatformer5" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer6" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgPlatformer6"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer6" class="card-title">Card title</p>
+                                <p id="idPlatformer6" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div  id="cardPlatformer7" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgPlatformer7"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer7" class="card-title">Card title</p>
+                                <p id="idPlatformer7" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer8" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgPlatformer8"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer8" class="card-title">Card title</p>
+                                <p id="idPlatformer8" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer9" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgPlatformer9" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer9" class="card-title">Card title</p>
+                                <p id="idPlatformer9" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer10" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgPlatformer10" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer10" class="card-title">Card title</p>
+                                <p id="idPlatformer10" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer11" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgPlatformer11" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer11" class="card-title">Card title</p>
+                                <p id="idPlatformer11" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer12" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgPlatformer12" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer12" class="card-title">Card title</p>
+                                <p id="idPlatformer12" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div  id="cardPlatformer13" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgPlatformer13" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer13" class="card-title">Card title</p>
+                                <p id="idPlatformer13" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer14" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgPlatformer14" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer14" class="card-title">Card title</p>
+                                <p id="idPlatformer14" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer15" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgPlatformer15" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer15" class="card-title">Card title</p>
+                                <p id="idPlatformer15" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer16" data-ng-click="selectGame($event)"  class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgPlatformer16" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer16" class="card-title">Card title</p>
+                                <p id="idPlatformer16" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer17" data-ng-click="selectGame($event)"  class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgPlatformer17" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer17" class="card-title">Card title</p>
+                                <p id="idPlatformer17" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div  id="cardPlatformer18" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgPlatformer18" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titlePlatformer18" class="card-title">Card title</p>
+                                <p id="idPlatformer18" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Third slide-->
+
+            </div>
+            <!--/.Slides-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+
+    <div id="MMORPG" class="container my-4">
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example3" class="carousel slide carousel-multi-item" data-bs-ride="carousel">
+            <div class="container-fluid mt-3">
+                <h3 id="titleCarousel3" class="gallery-title">MMORPG</h3>
+            </div>
+            <!--Controls-->
+            <div id="controlMMORPG" class="controls-top">
+                <button class="carousel-control-prev ctrl-prev" type="button" data-bs-target="#multi-item-example3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next ctrl-next" type="button" data-bs-target="#multi-item-example3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <!--/.Controls-->
+
+
+            <!--Slides-->
+            <div class="carousel-inner col-10 mx-auto" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div id="cardMMORPG1" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgMMORPG1" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG1" class="card-title">Card title</p>
+                                <p id="idMMORPG1" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG2" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgMMORPG2" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG2" class="card-title">Card title</p>
+                                <p id="idMMORPG2" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG3" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgMMORPG3" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG3" class="card-title">Card title</p>
+                                <p id="idMMORPG3" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG4" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgMMORPG4"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG4" class="card-title">Card title</p>
+                                <p id="idMMORPG4" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG5" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgMMORPG5"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG5" class="card-title">Card title</p>
+                                <p id="idMMORPG5" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG6" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgMMORPG6"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG6" class="card-title">Card title</p>
+                                <p id="idMMORPG6" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div id="cardMMORPG7" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgMMORPG7"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG7" class="card-title">Card title</p>
+                                <p id="idMMORPG7" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG8" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgMMORPG8"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG8" data-ng-click="selectGame($event)" class="card-title">Card title</p>
+                                <p id="idMMORPG8" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG9" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgMMORPG9" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG9" class="card-title">Card title</p>
+                                <p id="idMMORPG9" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG10" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgMMORPG10" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG10" class="card-title">Card title</p>
+                                <p id="idMMORPG10" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG11" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgMMORPG11" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG11" class="card-title">Card title</p>
+                                <p id="idMMORPG11" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG12" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgMMORPG12" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG12" class="card-title">Card title</p>
+                                <p id="idMMORPG12" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div id="cardMMORPG13" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgMMORPG13" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG13" class="card-title">Card title</p>
+                                <p id="idMMORPG13" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG14" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgMMORPG14" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG14" class="card-title">Card title</p>
+                                <p id="idMMORPG14" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG15" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgMMORPG15" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG15" class="card-title">Card title</p>
+                                <p id="idMMORPG15" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG16" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgMMORPG16" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG16" class="card-title">Card title</p>
+                                <p id="idMMORPG16" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG17" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgMMORPG17" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG17" class="card-title">Card title</p>
+                                <p id="idMMORPG17" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardMMORPG18" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgMMORPG18" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleMMORPG18" data-ng-click="selectGame($event)" class="card-title">Card title</p>
+                                <p id="idMMORPG18" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Third slide-->
+
+            </div>
+            <!--/.Slides-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+
+
+    <div id="Racing" class="container my-4">
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example4" class="carousel slide carousel-multi-item" data-bs-ride="carousel">
+            <div class="container-fluid mt-3">
+                <h3 id="titleCarousel4" class="gallery-title">Racing</h3>
+            </div>
+            <!--Controls-->
+            <div id="controlRacing" class="controls-top">
+                <button class="carousel-control-prev ctrl-prev" type="button" data-bs-target="#multi-item-example4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next ctrl-next" type="button" data-bs-target="#multi-item-example4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <!--/.Controls-->
+
+
+            <!--Slides-->
+            <div class="carousel-inner col-10 mx-auto " role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div id="cardRacing1" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRacing1" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRacing1" class="card-title">Card title</p>
+                                <p id="idRacing1" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing2" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRacing2" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRacing2" class="card-title">Card title</p>
+                                <p id="idRacing2" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing3" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRacing3" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRacing3" class="card-title">Card title</p>
+                                <p id="idRacing3" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing4" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRacing4"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRacing4" class="card-title">Card title</p>
+                                <p id="idRacing4" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing5" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRacing5"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRacing5" class="card-title">Card title</p>
+                                <p id="idRacing5" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing6" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRacing6"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRacing6" class="card-title">Card title</p>
+                                <p id="idRacing6" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div id="cardRacing7" data-ng-click="selectGame($event)"  class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRacing7"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRacing7" class="card-title">Card title</p>
+                                <p id="idRacing7" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing8" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRacing8"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRacing8" class="card-title">Card title</p>
+                                <p id="idRacing8" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing9" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRacing9" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRacing9" class="card-title">Card title</p>
+                                <p id="idRacing9" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing10" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRacing10" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRacing10" class="card-title">Card title</p>
+                                <p id="idRacing10" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing11" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRacing11" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRacing11" class="card-title">Card title</p>
+                                <p id="idRacing11" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing12" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRacing12" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRacing12" class="card-title">Card title</p>
+                                <p id="idRacing12" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div id="cardRacing13" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRacing13" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRacing13" class="card-title">Card title</p>
+                                <p id="idRacing13" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing14" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRacing14" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRacing14" class="card-title">Card title</p>
+                                <p id="idRacing14" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing15" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRacing15" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRacing15" class="card-title">Card title</p>
+                                <p id="idRacing15" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing16" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRacing16" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRacing16" class="card-title">Card title</p>
+                                <p id="idRacing16" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing17" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRacing17" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRacing17" class="card-title">Card title</p>
+                                <p id="idRacing17" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRacing18" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRacing18" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRacing18" class="card-title">Card title</p>
+                                <p id="idRacing18" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Third slide-->
+
+            </div>
+            <!--/.Slides-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+
+
+    <div id="RPG" class="container my-4">
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example5" class="carousel slide carousel-multi-item" data-bs-ride="carousel">
+            <div class="container-fluid mt-3">
+                <h3 id="titleCarousel5" class="gallery-title">RPG</h3>
+            </div>
+            <!--Controls-->
+            <div id="controlRPG" class="controls-top">
+                <button class="carousel-control-prev ctrl-prev" type="button" data-bs-target="#multi-item-example5" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next ctrl-next" type="button" data-bs-target="#multi-item-example5" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <!--/.Controls-->
+
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div id="cardRPG1" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRPG1" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRPG1" class="card-title">Card title</p>
+                                <p id="idRPG1" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG2" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRPG2" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRPG2" class="card-title">Card title</p>
+                                <p id="idRPG2" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG3" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRPG3" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRPG3" class="card-title">Card title</p>
+                                <p id="idRPG3" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG4" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRPG4"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRPG4" class="card-title">Card title</p>
+                                <p id="idRPG4" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG5" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRPG5"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRPG5" class="card-title">Card title</p>
+                                <p id="idRPG5" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG6" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRPG6"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRPG6" class="card-title">Card title</p>
+                                <p id="idRPG6" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div id="cardRPG7" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRPG7"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRPG7" class="card-title">Card title</p>
+                                <p id="idRPG7" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG8" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRPG8"  class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRPG8" class="card-title">Card title</p>
+                                <p id="idRPG8" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG9" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRPG9" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRPG9" class="card-title">Card title</p>
+                                <p id="idRPG9" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG10" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRPG10" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRPG10" class="card-title">Card title</p>
+                                <p id="idRPG10" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG11" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRPG11" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRPG11" class="card-title">Card title</p>
+                                <p id="idRPG11" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG12" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img  id="imgRPG12" class="card-img-top" src=""
+                                          alt="Card image cap">
+                                </a>
+                                <p id="titleRPG12" class="card-title">Card title</p>
+                                <p id="idRPG12" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div id="cardRPG13" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRPG13" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRPG13" class="card-title">Card title</p>
+                                <p id="idRPG13" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG14" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRPG14" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRPG14" class="card-title">Card title</p>
+                                <p id="idRPG14" class="card-title"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG15" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRPG15" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRPG15" class="card-title">Card title</p>
+                                <p id="idRPG15" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG16" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRPG16" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRPG16" class="card-title">Card title</p>
+                                <p id="idRPG16" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG17" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRPG17" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRPG17" class="card-title">Card title</p>
+                                <p id="idRPG17" class="card-title"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 clearfix d-none d-md-block">
+                            <div id="cardRPG18" data-ng-click="selectGame($event)" class="card mb-2">
+                                <a href="" onclick="displayInformation()">
+                                    <img id="imgRPG18" class="card-img-top" src=""
+                                         alt="Card image cap">
+                                </a>
+                                <p id="titleRPG18" class="card-title">Card title</p>
+                                <p id="idRPG18" class="card-title"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Third slide-->
+            </div>
+            <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+</div>
+
+<script>
+    $("[id*='cardFPS'],[id*='cardMMORPG'], [id*='cardRacing'], [id*='cardRPG'], [id*='cardPlatformer']").mouseenter(function(){
+        $(this).animate({
+            borderWidth:  '10px'
+        }, 200);
+    }).mouseleave(function(){
+        $(this).css("borderColor", "white").animate({
+            borderWidth:  '1px'
+        }, 200);
+    });
+    $("#demo").fadeIn(1000);
+</script>

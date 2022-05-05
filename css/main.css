@@ -1,0 +1,394 @@
+html{
+    scroll-behavior: smooth;
+}
+.dropdown-menu {
+    min-width: 200px;
+}
+.dropdown-menu.columns-2 {
+    min-width: 400px;
+}
+.dropdown-menu.columns-3 {
+    min-width: 600px;
+}
+.dropdown-menu li a {
+    padding: 5px 15px;
+    font-weight: 300;
+}
+.multi-column-dropdown {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.multi-column-dropdown li a {
+    text-decoration: none;
+    display: block;
+    clear: both;
+    line-height: 1.428571429;
+    color: #333;
+    white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+    text-decoration: underline;
+}
+
+
+
+.header-footer {
+    color: #b9aeb1 !important;
+    font-weight: bold;
+}
+
+
+
+.column {
+    width: 33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    display: none;
+    width: 100%;
+    position: center;
+    margin-top: 5% !important;
+    bottom: 0;
+    height: 100%;
+}
+
+.carousel{
+    margin-left: 5%;
+    margin-right: 5%;
+    position: center;
+}
+
+.carousel-caption{
+    backdrop-filter: blur(4px) brightness(80%);
+    -webkit-backdrop-filter: blur(4px) brightness(80%);
+}
+
+
+body{
+    background-image: url("../images/background-main2.PNG");
+    height: 100%;
+    margin-bottom: 0;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery-title{
+    color: whitesmoke;
+}
+
+
+
+[id*="cardFPS"], [id*="cardPlatformer"],
+[id*="cardMMORPG"], [id*="cardRacing"],
+[id*="cardRPG"],  [id*="titleCarousel"],
+[id*="idFPS"], [id*="idPlatformer"],
+[id*="idMMORPG"], [id*="idRacing"],
+[id*="idRPG"], [id*="cardQuery"],
+[id*="idQuery"], [id*="idDemo"],
+#controlFPS, #controlPlatformer,
+#controlMMORPG, #controlRacing,
+#controlRPG, #gameInformation,
+#gameQuery{
+    display: none;
+}
+
+[id*="titleFPS"],  [id*="titlePlatformer"],
+[id*="titleMMORPG"], [id*="titleRacing"],
+[id*="titleRPG"]{
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+[id*="titleQuery"]{
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#demo {
+    display: none;
+    position: center !important;
+    position: relative;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#resultsNumber{
+    margin-left: 50px;
+    margin-top: 15px;
+    color: white;
+}
+
+#gameQuery{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 80px;
+    min-height: 60vh;
+    bottom: 0;
+}
+#displayQuery{
+    margin-top: 50px;
+}
+.pagination{
+    margin-top: 50px;
+    zoom: 110%;
+}
+
+#gameInformation{
+    background-image: url("https://games.mxdwn.com/wp-content/uploads/2021/06/Halo-Infinite-MP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 24px;
+    color: whitesmoke;
+    position: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    min-width: 700px;
+}
+
+
+
+/*--------------------------*/
+/* Style the header */
+#gameInfoTop {
+    padding: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+#gameInfoTop h1{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#box{
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: brightness(40%) grayscale(40%);
+    -webkit-backdrop-filter:  brightness(40%) grayscale(40%);
+}
+#gameInformation{
+    margin-top: 70px;
+    margin-bottom: -5%;
+}
+
+.back{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.bg-top{
+backdrop-filter: blur(8px) brightness(80%);
+-webkit-backdrop-filter: blur(8px) brightness(80%);
+}
+/* Container for flexboxes */
+#gameinfoLeft {
+    display: -webkit-flex;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    background-color: rgba(235, 235, 235, 0.5);
+
+}
+.purchase{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+#gameinfoLeft img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -120px;
+}
+
+#gameinfoRight {
+    display: -webkit-flex;
+    display: flex;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-direction: column;
+    vertical-align: top;
+    background-color: rgba(235, 235, 235, 0.5);
+    width: 20em;
+}
+#gameInformation a {
+    color: white;
+}
+
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the content */
+#gameDesc {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 10px;
+    text-align: justify;
+    background-color: rgba(243, 243, 243, 0.05);
+    padding-block-end:30vh;
+}
+#youtubeTrailer2{
+    visibility: hidden;
+}
+#screenshots, [id*=youtubeTrailer]{
+    margin-top: 20%;
+}
+[id*="youtubeTrailer"]{
+    margin-top: auto;
+    display: block;
+    position: relative;
+}
+#screenshots img{
+    margin-top: auto;
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+    width: 90%;
+}
+
+.wikipedia, .facebook, .twitter{
+    display: none;
+}
+
+#manage_account, #cart, #manage_balance, #support,
+#privacy_policy, #terms_and_conditions, #about, #manage_games{
+    align-items: center;
+    margin-top: 15vh;
+    width: 70% !important;
+    display: none;
+    height: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: white;
+}
+
+#manage_account .border-right{
+    border-right: 1px lightslategray solid;
+}
+
+#manage_account .edit{
+margin: 0 auto;
+display: block;
+}
+
+#manage_account input, #manage_games input{
+    margin-bottom: 10px;
+}
+#purchase_history, #games_list{
+    padding-bottom: 10px;
+}
+
+
+
+/*--------------*/
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.progress {
+    width: 100px;
+    height: 100px;
+    background: none;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 0;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+}
+
+.progress .progress-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

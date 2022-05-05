@@ -1,0 +1,179 @@
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 2000px) and (orientation: landscape) {
+    html {
+        zoom: 250%;
+    }
+}
+
+@media (max-width: 767px) {
+
+}
+
+
+
+
+@media (max-width: 550px) {
+    #category {
+        height: 400px;
+        overflow-y: scroll;
+    }
+    #gameInformation{
+        padding-top: 10% !important;
+    }
+}
+
+@media (min-width: 900px) and (orientation: landscape){
+    .ctrl-prev {
+        margin-left: -125px;
+    }
+
+    .ctrl-next {
+        margin-right: -125px;
+    }
+}
+@media (min-width: 760px) and (max-width: 900px) {
+    .ctrl-prev {
+        margin-left: -100px;
+    }
+    .ctrl-next {
+        margin-right: -100px;
+    }
+}
+
+@media(orientation: portrait){
+
+    .dropdown-menu.multi-column {
+        min-width: 240px !important;
+        overflow-x: hidden;
+    }
+    .column {
+        margin-left: 10%;
+        width: 100%;
+    }
+    .copyright{
+        margin-bottom: 10%;
+    }
+    .footer-extra {
+        margin-bottom: 5%;
+    }
+    button {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .logo-bottom, .carousel-desc{
+        display: none;
+    }
+
+    .carousel{
+        margin-top: 20%;
+        margin-left: 5%;
+        margin-right: 5%;
+        position: center;
+    }
+
+    #demo{
+        display: none !important;
+    }
+    footer {
+        width: 100%;
+        zoom: 100%;
+        position: relative !important;
+        align-content: stretch;
+        position: center !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        max-width: 100%;
+        min-width: 100%;
+        height: auto !important;
+        bottom: 0 !important;
+
+
+    }
+    footer .column{
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        zoom: 110%;
+    }
+
+    #gameInformation{
+        zoom: 50%;
+        margin-top: 0 !important;
+    }
+
+    #gameinfoLeft button, #releaseDate{
+        margin-bottom: 10vh !important;
+    }
+    #gameinfoLeft .h6, #gameinfoLeft a, #gameinfoLeft button,
+   #gameinfoLeft h3, #gameDesc{
+        font-size: xx-large !important;
+    }
+
+    #gameInfoTop h1{
+        text-align: right !important;
+        display: block !important;
+        justify-content: right !important;
+        padding-left: 60% !important;
+        zoom: 150%;
+    }
+    #back{
+        font-size: xx-large !important;
+        margin-top: 20vh !important;
+        margin-bottom: 10%;
+    }
+    #FPS{
+        margin-top: 20vh !important;
+    }
+    #gameDesc{
+        text-align: justify;
+        text-justify: distribute;
+        text-align-last: left;
+        padding-right: 2%;
+
+    }
+    .navbar {
+        zoom: 120%;
+    }
+#cover{
+    zoom: 150%;
+}
+#progress1{
+    zoom: 150%;
+ }
+[id*="titleQuery"]{
+    font-size: x-small !important;
+}
+    #youtubeTrailer2, #titleTrailerLeft{
+        visibility: visible;
+        align-self: center;
+        width: 100%;
+    }
+
+    #manage_account, #cart{
+             width: auto !important;
+         }
+
+    #btnPurchaseCartItems{
+        margin: 0 auto !important;
+        display:block !important;
+    }
+
+    #manage_account, #manage_games .inputs{
+        width: auto !important;
+    }
+    #manage_account .border-right{
+        border-right: none !important;
+    }
+    #manage_games, #terms_and_conditions, #privacy_policy, #about{
+        width:100% !important;
+    }
+}

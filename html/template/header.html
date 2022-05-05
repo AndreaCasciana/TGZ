@@ -1,0 +1,104 @@
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top shadow">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="images/logo.PNG" width="40" height="50" alt="TGZ"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="" onclick="about()">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu multi-column columns-3" id="category">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ul class="multi-column-dropdown">
+                                    <li><h5 class="dropdown-header">Action & Shooter</h5></li>
+                                    <li><a href="" onclick="searchGame(2, 'Action')" >Action</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Arcade')">Arcade</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Hack and slash/Beat \'em up')">Beat 'Em Up</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Fighting')" >Fighting & Martial Arts</a></li>
+                                    <li><a href="" onclick="searchGame(3, 'First person')">First-Person Shooter</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Platform')">Platformer</a></li>
+                                    <li><a href=""  onclick="searchGame(3, 'Third person')">Third-Person Shooter</a></li>
+                                    </br>
+                                    <li><h5 class="dropdown-header">Adventure & Role-Playing</h5></li>
+                                    <li><a href="" onclick="searchGame(1, 'Adventure')">Adventure</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Role-playing (RPG)')">RPG</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Stealth')">Stealth</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Puzzle')">Puzzle</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Visual Novel')">Visual Novel</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Point-and-click')">Point-and-click</a></li>
+                                    </br>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul class="multi-column-dropdown">
+                                    <li><h5 class="dropdown-header">Strategy</h5></li>
+                                    <li><a href="" onclick="searchGame(2, '4X (explore, expand, exploit, and exterminate)')">4X</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Card & Board Game')">Card & Board</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Real Time Strategy (RTS)')">Real-Time Strategy</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Tactical')">Tactical</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Quiz/Trivia')">Quiz/Trivia</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'MOBA')">MOBA</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Turn-based strategy (TBS)')">Turn-Based Strategy</a></li>
+                                    </br>
+                                    <li><h5 class="dropdown-header">Sport & Simulation</h5></li>
+                                    <li><a href="" onclick="searchGame(2, 'Sandbox')">Sandbox</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Simulator')">Simulator</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Sport')">Sport</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Racing')">Racing</a></li>
+                                    <li><a href="" onclick="searchGame(1,'Pinball')">Pinball</a></li>
+                                    </br>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul class="multi-column-dropdown">
+                                    <li><h5 class="dropdown-header">Themes</h5></li>
+                                    <li><a href="" onclick="searchGame(2, 'Comedy')">Comedy</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Drama')">Drama</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Educational')">Educational</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Fantasy')">Fantasy</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Historical')">Historical</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Horror')">Horror</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Indie')">Indie</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Kids')">Kids</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Mystery')">Mystery</a></li>
+                                    <li><a href="" onclick="searchGame(1, 'Music')">Music</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Open world')">Open world</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Party')">Party</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Romance')">Romance</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Survival')">Survival</a></li>
+                                    <li><a href="" onclick="searchGame(2, 'Thriller')">Thriller</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </li> <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Support
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href=""  onclick="support()" ng-click="support(1)">Game Technical Issues</a></li>
+                    <li><a class="dropdown-item" href=""  onclick="support()" ng-click="support(2)">Orders and Payments</a></li>
+                    <li><a class="dropdown-item" href=""   onclick="support()" ng-click="support(3)">Account and Website</a></li>
+                </ul>
+            </li>
+                <div id="account">
+                    <button onclick="location.href='#!login'" class="btn btn-outline-primary "><i class="bi bi-person-circle" style="color:white"></i> Sign in</button>
+                </div>
+            </ul>
+            <div class="d-flex">
+                <button class="btn" onclick="searchGame(0, 'search')"><i class="bi bi-search"  style="color:white"></i></button>
+                <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,114 @@
+
+    <!-- Game information page -->
+    <div id="gameInformation"  class="mx-auto">
+        <div class="bg-top">
+            <button id="back" type="button" class="back btn btn-primary btn-lg" onclick="mainPage()" back=''> <i class="bi bi-caret-left-fill"></i> back</button>
+            <div id="gameInfoTop">
+                <div>
+                    <h1>{{title}}</h1>
+                </div>
+            </div>
+        </div>
+        <div id="box">
+            <div id="gameinfoLeft">
+                <nav class="gap-2">
+                    <img id="cover" class="rounded-3 shadow" data-ng-src="{{cover}}">
+                    <p id="price">{{price}}</p>
+                    <button type="button" onclick="addToCart()" class="btn btn-primary purchase shadow">Add to cart</button>
+                    <p id="releaseDate" class="h6">Release date: {{releaseDate}}</p>
+                    <p id="item" style="display:none">{{item}}</p>
+
+                    <div class="d-sm-block d-lg-none">
+                        <div id="progress1" class="progress" data-value=''>
+                        <span class="progress-left">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                            <span class="progress-right">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                            <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                <div class="h2 font-weight-bold">{{rating}}</div>
+                            </div>
+                        </div>
+                        <nav>
+                            <p class="h6">Based on {{ratingCount}} critic ratings</p>
+                            <br>
+                            <iframe id="youtubeTrailer2" class="youtubeTrailer img-responsive" allowfullscreen="true" allowscriptaccess="true"></iframe>
+                            <ul>
+                                <li><a class="wikipedia" data-ng-href="{{wikipedia}}">Wikipedia</a></li>
+                                <li><a class="facebook" data-ng-href="{{facebook}}">Facebook</a></li>
+                                <li><a class="twitter" data-ng-href="{{twitter}}">Twitter</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="screenshots" class="container">
+                        <h3>Screenshots</h3>
+                        <img class="rounded-3 shadow img-responsive" data-ng-src="{{screenshot1}}" onerror="this.style.display='none'" onload="this.style.display=''" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img class="rounded-3 shadow img-responsive" data-ng-src="{{screenshot2}}" onerror="this.style.display='none'" onload="this.style.display=''" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img class="rounded-3 shadow img-responsive" data-ng-src="{{screenshot3}}" onerror="this.style.display='none'" onload="this.style.display=''" data-bs-toggle="modal" data-bs-target="#myModal">
+                    </div>
+                </nav>
+
+                <div id="gameDesc" class="flex-end col-12">
+                        <span id="descVisible"></span><span id="descHidden" class="collapse"></span>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#descHidden" id="read-more">Read More</button>
+                </div>
+            </div>
+
+            <div id="gameinfoRight" class="d-none d-md-none d-lg-block">
+                <div id="progress2" class="progress" data-value=''>
+                        <span class="progress-left">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                    <span class="progress-right">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                    <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                        <div class="h2 font-weight-bold">{{rating}}</div>
+                    </div>
+                </div>
+
+                <nav>
+                    <p class="h6">Based on {{ratingCount}} critic ratings</p>
+                    <br>
+                    <iframe id="youtubeTrailer1" class="youtubeTrailer img-responsive" allowfullscreen="true" allowscriptaccess="true"></iframe>
+                    <ul>
+                        <li><a class="wikipedia" data-ng-href="{{wikipedia}}">Wikipedia</a></li>
+                        <li><a class="facebook" data-ng-href="{{facebook}}">Facebook</a></li>
+                        <li><a class="twitter" data-ng-href="{{twitter}}">Twitter</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <!-- Game information page -->
+
+    <!-- The Modal -->
+    <div class="modal bg-dark fade" id="myModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <img id="modalImage" class="img-thumbnail" src="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#descHidden').on('hidden.bs.collapse', function () {
+            $('#read-more').text('Read More');
+        });
+        $('#descHidden').on('shown.bs.collapse', function () {
+            $('#read-more').text('Read Less');
+        });
+
+        $('#screenshots img').click(function(){
+            $('#modalImage').attr('src', $(this).attr('src').replace('t_screenshot_med', 't_screenshot_huge'));
+        });
+
+
+    </script>

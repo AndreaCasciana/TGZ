@@ -1,0 +1,37 @@
+<div id="manage_games" class="container rounded-3 shadow">
+    <div class="container rounded bg-white mt-5 mb-5">
+        <button type="button" class="back btn btn-primary btn-lg" onclick="mainPage()" back=''> <i class="bi bi-caret-left-fill"></i> back</button>
+        <div class="row text-center">
+                    <div class="row mt-3">
+                        <h4>Add a game</h4>
+                        <form onsubmit="javascript:addGame()"  method="post">
+                        <div class="col-md-12">
+                                <div class="row mt-3 inputs">
+                                    <div class="col-md-12"><label class="labels"><b>ID*: </b></label><input class="form-control" size="10" type="text"  id="addID"/></div>
+                                    <div class="col-md-12"><label class="labels"><b>Name*: </b></label><input class="form-control" size="10" type="text"  id="addName"/></div>
+                                    <div class="col-md-12"><label class="labels"><b>Cover URL*: </b></label><input class="form-control" size="10" type="text"  id="addCover"/></div>
+                                    <div class="col-md-12"><label class="labels"><b>Release Date*: </b></label><input class="form-control"  size="10" type="text"  id="addReleaseDate"/></div>
+                                    <div class="col-md-12"><label class="labels"><b>Price (ETH)*: </b></label><input class="form-control"  size="10" type="text"  id="addPrice"/></div>
+                            <div class="col-md-12"><label class="labels"><b>Summary*: </b></label><input class="form-control" size="10" type="text" id="addSummary"/></div>
+                            <div class="col-md-12"><label class="labels"><b>Rating*: </b></label><input class="form-control" size="10" type="text"  id="addRating"/></div>
+                            <div class="col-md-12"><label class="labels"><b>Rating Count*: </b></label><input class="form-control"  size="10" type="text"  id="addRatingCount"/></div>
+                            <div class="col-md-12"><label class="labels"><b>Youtube Video ID: </b></label><input class="form-control"  size="10" type="text"  id="addYoutube"/></div>
+                            <div class="col-md-12"><label class="labels"><b>Screenshot1 URL*: </b></label><input class="form-control"  size="10" type="text"  id="addScreenshot1"/></div>
+                                    <div class="col-md-12"><label class="labels"><b>Screenshot2 URL: </b></label><input class="form-control"  size="10" type="text"  id="addScreenshot2"/></div>
+                                    <div class="col-md-12"><label class="labels"><b>Screenshot3 URL: </b></label><input class="form-control"  size="10" type="text"  id="addScreenshot3"/></div>
+                                </div>
+                            </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary edit">Add Game</button>
+                                <div id="labelAddGame"></div>
+                        </form>
+                        </div>
+            </div>
+        </div>
+    <div id="games_list">
+        <div class="container mt-3">
+            <h2>Games</h2>
+            <div id="tableGamesList" class="table-responsive"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "name": "tgz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "latest",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "latest",
+    "connect-mongodb-session": "^3.1.1",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9"
+  },
+  "devDependencies": {
+    "cookie-parser": "^1.4.6",
+    "express-session": "^1.17.2",
+    "igdb-api-node": "^5.0.1"
+  }
+}

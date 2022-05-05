@@ -1,0 +1,26 @@
+<div id="support" class="container rounded-3 shadow">
+<form onsubmit="javascript:sendSupport()"  method="POST" >
+    <button type="button" class="back btn btn-primary btn-lg" onclick="mainPage()" back=''> <i class="bi bi-caret-left-fill"></i> back</button>
+    <div class="container mt-3">
+        <select class="form-select form-select-lg mb-3 selectpicker" aria-label=".form-select-lg example">
+            <option selected></option>
+            <option>{{support1}}</option>
+            <option>{{support2}}</option>
+            <option>{{support3}}</option>
+        </select>
+        <div class="form-group">
+            <label for="emailSupport">Your email address:</label>
+            <textarea class="form-control" rows="1" id="emailSupport"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="descSupport">Tell us something more about your problem:</label>
+            <textarea class="form-control" rows="5" id="descSupport"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success edit">Send</button>
+        <br><br>
+        <div id="labelSupport"></div>
+        <br>
+    </div>
+</form>
+</div>

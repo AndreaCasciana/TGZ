@@ -1,0 +1,64 @@
+<div id="manage_account" class="container rounded-3 shadow">
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <button type="button" class="back btn btn-primary btn-lg" onclick="mainPage()" back=''> <i class="bi bi-caret-left-fill"></i> back</button>
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                    <span id="myUsername" class="font-weight-bold">{{username}}</span>
+                    <span class="text-black-50">{{email}}</span>
+                    <span class="text-black-50">Member since: {{registration_date}}</span>
+                    <span> </span>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="p-3 py-5">
+                    <div class="row mt-3">
+                        <h4 class="text-center">Account Settings</h4>
+                        <div class="col-md-6">
+                            <form id="edit_account" onsubmit="javascript:editInfo()"  method="post">
+                                <div class="row mt-3 inputs">
+                                    <div class="col-md-12"><label class="labels"><b>Name: </b></label><input class="form-control" size="10" type="text" value="{{name}}" id="name"/></div>
+                                    <div class="col-md-12"><label class="labels"><b>Surname: </b></label><input class="form-control" size="10" type="text" value="{{surname}}" id="surname"/></div>
+                                    <div class="col-md-12"><label class="labels"><b>Username: </b></label><input class="form-control"  size="10" type="text" value="{{username}}" id="username"/></div>
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary edit">Edit Info</button>
+                                <div id="labelChangeInfo"></div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <form id="change_password" onsubmit="javascript:changePassword()"  method="POST" >
+                                <div class="row mt-3 inputs">
+                                    <div class="col-md-12"><label class="labels"><b>Old Password: </b></label><input class="form-control" size="12" type="password" placeholder="current password" id="currPwd"/></div>
+                                    <div class="col-md-12"><label class="labels"><b>New Password: </b></label><input class="form-control" size="12" type="password" placeholder="new password" id="newPwd"/></div>
+                                    <div class="col-md-12"><label class="labels"><b>Confirm New Password: </b></label><input class="form-control" size="12" type="password" placeholder="repeat new password" id="newPwd2"/></div>
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary edit">Change Password</button>
+                                <div id="labelChangePassword"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form id="delete_account" onsubmit="javascript:deleteAccount()"  method="POST" >
+                            <div class="row mt-3 inputs">
+                                <div class="col-md-12"><label class="labels"><b>Password: </b></label><input class="form-control" size="12" type="password" placeholder="your password" id="pwdDelete"/></div>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-danger edit">Delete Account</button>
+                            <div id="labelDeleteAccount"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="purchase_history">
+        <div class="container mt-3">
+            <h2>Purchase History</h2>
+            <div id="tablePurchaseHistory"></div>
+        </div>
+    </div>
+</div>
