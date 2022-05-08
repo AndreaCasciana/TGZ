@@ -9,10 +9,11 @@ const db = mongoose.connection;
 const UserModel = require("./js/models/User");
 const nodemailer = require('nodemailer');
 const serial = require("generate-serial-key");
-const mongoURI = "mongodb+srv://cascio97:dogo1997@tgz.4vj9b.mongodb.net/TGZ?retryWrites=true&w=majority";
+const mongoURI = "mongodb+srv://cascio97:thegamingzone2022@tgz.4vj9b.mongodb.net/TGZ?retryWrites=true&w=majority";
 require('dotenv').config();
 const axios = require('axios');
 const bodyParser = require("body-parser");
+const urlWebsite = "https://scascian2.alwaysdata.net";
 const mailWebsite = 'mail.thegamingzone2022@gmail.com';
 const  clientID = "nyudlcj70c24khb7hzf10wjb3bl3td", clientSecret="Bearer xccadxxiwsxday1l8a57pal6of5az4";
 app.use("/images", express.static(__dirname + "/images"));
@@ -234,7 +235,7 @@ app.post("/register", async (req, res) =>{
             '                                    <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 60px 30px;">\n' +
             '                                        <table border="0" cellspacing="0" cellpadding="0">\n' +
             '                                            <tr>\n' +
-            '                                                <td align="center" style="border-radius: 3px;" bgcolor="#FFA73B"><a href="https://scascian2.alwaysdata.net/#!/verify?ver='+ verificationString+'" target="_blank" style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; padding: 15px 25px; border-radius: 2px; border: 1px solid #FFA73B; display: inline-block;">Confirm Account</a></td>\n' +
+            '                                                <td align="center" style="border-radius: 3px;" bgcolor="#FFA73B"><a href="' + urlWebsite + '/#!/verify?ver='+ verificationString+'" target="_blank" style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; padding: 15px 25px; border-radius: 2px; border: 1px solid #FFA73B; display: inline-block;">Confirm Account</a></td>\n' +
             '                                            </tr>\n' +
             '                                        </table>\n' +
             '                                    </td>\n' +
@@ -249,7 +250,7 @@ app.post("/register", async (req, res) =>{
             '                    </tr> <!-- COPY -->\n' +
             '                    <tr>\n' +
             '                        <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: \'Lato\', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">\n' +
-            '                            <p style="margin: 0;"><a href="https://scascian2.alwaysdata.net/#!/verify?ver='+ verificationString+'" target="_blank" style="color: #FFA73B;">https://scascian2.alwaysdata.net/#!/verify?ver='+ verificationString +'</a></p>\n' +
+            '                            <p style="margin: 0;"><a href="' + urlWebsite + '/#!/verify?ver='+ verificationString+'" target="_blank" style="color: #FFA73B;">' + urlWebsite + '/#!/verify?ver='+ verificationString +'</a></p>\n' +
             '                        </td>\n' +
             '                    </tr>\n' +
             '                    <tr>\n' +
@@ -507,7 +508,7 @@ app.post("/resetPasswordEmail", async (req, res)=>{
         '                                    <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 60px 30px;">\n' +
         '                                        <table border="0" cellspacing="0" cellpadding="0">\n' +
         '                                            <tr>\n' +
-        '                                                <td align="center" style="border-radius: 3px;" bgcolor="#FFA73B"><a href="https://scascian2.alwaysdata.net/#!/reset?str='+ resetString+'" target="_blank" style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; padding: 15px 25px; border-radius: 2px; border: 1px solid #FFA73B; display: inline-block;">Reset your password</a></td>\n' +
+        '                                                <td align="center" style="border-radius: 3px;" bgcolor="#FFA73B"><a href="' + urlWebsite + '/#!/reset?str='+ resetString+'" target="_blank" style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; padding: 15px 25px; border-radius: 2px; border: 1px solid #FFA73B; display: inline-block;">Reset your password</a></td>\n' +
         '                                            </tr>\n' +
         '                                        </table>\n' +
         '                                    </td>\n' +

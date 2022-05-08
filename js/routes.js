@@ -13,3 +13,4 @@ angular.module("myApp").config(function($routeProvider){
         templateUrl: 'html/reset_password.html'
     });
 });
+const urlWebsite = "https://scascian2.alwaysdata.net";

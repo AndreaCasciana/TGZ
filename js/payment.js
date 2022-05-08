@@ -89,7 +89,7 @@ async function purchase() {
     }, function(error,hash){
         if (!error){
             $.ajax({
-                url: "https://scascian2.alwaysdata.net/purchase",
+                url: urlWebsite + "/purchase",
                 type: "POST",
                 async:false,
                 success: function (response) {

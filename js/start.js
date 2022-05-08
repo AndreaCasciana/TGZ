@@ -7,15 +7,15 @@ $(document).ready(function(){
 
  //gets the data of the category and displays the carousels on the main page//
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/Shooters",
+        url: urlWebsite + "/Shooters",
         type: "GET",
         data: {
             'name': 'First person',
         },
         success: function (data) {
             for (let i = 0; i < 18; i++) {
-                if (data[i].name.length > 25)
-                    document.getElementById("titleFPS" + (i + 1).toString().replace(/^0/, '')).innerText = data[i].name.slice(0, 24) + "...";
+                if (data[i].name.length > 17)
+                    document.getElementById("titleFPS" + (i + 1).toString().replace(/^0/, '')).innerText = data[i].name.slice(0, 16) + "...";
                 else
                     document.getElementById("titleFPS" + (i + 1).toString().replace(/^0/, '')).innerText = data[i].name;
                 document.getElementById("idFPS" + (i + 1).toString().replace(/^0/, '')).innerText = data[i].id;
@@ -27,15 +27,15 @@ $(document).ready(function(){
     });
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/browseCategory",
+        url: urlWebsite + "/browseCategory",
         type: "GET",
         data: {
             'name': 'Platform',
         },
         success: function (data) {
             for(let i = 0; i< 18; i++){
-                if(data[i].name.length > 25)
-                    document.getElementById("titlePlatformer" + (i+1).toString().replace(/^0/,'')).innerText = data[i].name.slice(0, 24) + "...";
+                if(data[i].name.length > 17)
+                    document.getElementById("titlePlatformer" + (i+1).toString().replace(/^0/,'')).innerText = data[i].name.slice(0, 16) + "...";
                     else
                     document.getElementById("titlePlatformer" + (i+1).toString().replace(/^0/,'')).innerText = data[i].name;
                     document.getElementById("idPlatformer" + (i + 1).toString().replace(/^0/, '')).innerText = data[i].id;
@@ -47,32 +47,32 @@ $(document).ready(function(){
     });
 
     $.ajax({
-        url:  "https://scascian2.alwaysdata.net/start_mmorpg",
+        url:  urlWebsite + "/start_mmorpg",
         type: "GET",
         success: function (data) {
             for(let i = 0; i< 18; i++){
-                if(data[i].name.length > 25)
-                    document.getElementById("titleMMORPG" + (i+1).toString().replace(/^0/,'')).innerText = data[i].name.slice(0, 24) + "...";
+                if(data[i].name.length > 17)
+                    document.getElementById("titleMMORPG" + (i+1).toString().replace(/^0/,'')).innerText = data[i].name.slice(0, 16) + "...";
                 else
                     document.getElementById("titleMMORPG" + (i+1).toString().replace(/^0/,'')).innerText = data[i].name;
                 document.getElementById("idMMORPG" + (i + 1).toString().replace(/^0/, '')).innerText = data[i].id;
                 document.getElementById( "imgMMORPG" +( i+1).toString().replace(/^0/,'')).src = data[i].cover.url.toString().replace('t_thumb','t_cover_big');
-                $("#"+ "cardMMORPG" + (i+1).toString().replace(/^0/,'')).stop(true,true).delay(2500+i*100).show(200);
+                $("#"+ "cardMMORPG" + (i+1).toString().replace(/^0/,'')).stop(true,true).delay(1700+i*100).show(200);
             }
             $("#titleCarousel3, #controlMMORPG").stop(true,true).delay(2800).show(200);
         }
     });
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/browseCategory",
+        url: urlWebsite + "/browseCategory",
         type: "GET",
         data: {
             'name': 'Role-playing (RPG)',
         },
         success: function (data) {
             for(let i = 0; i< 18; i++){
-                if(data[i].name.length > 25)
-                    document.getElementById("titleRPG" + (i+1).toString().replace(/^0/,'')).innerText = data[i].name.slice(0, 24) + "...";
+                if(data[i].name.length > 17)
+                    document.getElementById("titleRPG" + (i+1).toString().replace(/^0/,'')).innerText = data[i].name.slice(0, 16) + "...";
                 else
                 document.getElementById("titleRPG" + (i+1).toString().replace(/^0/,'')).innerText = data[i].name;
                 document.getElementById("idRPG" + (i + 1).toString().replace(/^0/, '')).innerText = data[i].id;
@@ -84,15 +84,15 @@ $(document).ready(function(){
     });
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/browseCategory",
+        url: urlWebsite + "/browseCategory",
         type: "GET",
         data: {
             'name': 'Racing',
         },
         success: function (data) {
             for(let i = 0; i< 18; i++){
-                if(data[i].name.length > 25)
-                    document.getElementById("titleRacing" + (i+1).toString().replace(/^0/,'')).innerText = data[i].name.slice(0, 24) + "...";
+                if(data[i].name.length > 17)
+                    document.getElementById("titleRacing" + (i+1).toString().replace(/^0/,'')).innerText = data[i].name.slice(0, 16) + "...";
                 else
                     document.getElementById("titleRacing" + (i+1).toString().replace(/^0/,'')).innerText = data[i].name;
                 document.getElementById("idRacing" + (i + 1).toString().replace(/^0/, '')).innerText = data[i].id;

@@ -1,3 +1,4 @@
+
 //displays the register form
 function switchRegister() {
     $('#signIn, #footerLogin, .brand_logo_container ').hide(500);
@@ -25,7 +26,7 @@ function forgotPassword() {
 //if not signed in, it displays the login button; otherwise it displays the user/admin menu
 function updateAccountMenu(){
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/isLoggedIn",
+        url: urlWebsite + "/isLoggedIn",
         type: "POST",
         success: function (data) {
             if (data != false){
@@ -110,7 +111,7 @@ function editInfo(){
     let exist = false;
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/userExist",
+        url: urlWebsite + "/userExist",
         type: "GET",
         async: false,
         data:{
@@ -130,7 +131,7 @@ function editInfo(){
 
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/editInfo",
+        url: urlWebsite + "/editInfo",
         type: "POST",
         async: false,
         data:{
@@ -164,7 +165,7 @@ function changePassword(){
     }
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/passwordMatch",
+        url: urlWebsite + "/passwordMatch",
         type: "POST",
         async: false,
         data:{
@@ -185,7 +186,7 @@ function changePassword(){
     }
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/changePassword",
+        url: urlWebsite + "/changePassword",
         type: "POST",
         async: false,
         data:{
@@ -207,7 +208,7 @@ function deleteAccount() {
     let match = false;
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/passwordMatch",
+        url: urlWebsite + "/passwordMatch",
         type: "POST",
         async: false,
         data: {
@@ -229,11 +230,11 @@ function deleteAccount() {
 
     if (confirm("Do you really want to delete your account? \nThis action is irreversible and your account\nwill be permanently deleted.")) {
         $.ajax({
-            url: "https://scascian2.alwaysdata.net/deleteAccount",
+            url: urlWebsite + "/deleteAccount",
             type: "POST",
             async: false,
             success: function (response) {
-                window.location.replace("https://scascian2.alwaysdata.net/logout");
+                window.location.replace(urlWebsite + "/logout");
             }
         });
     }
@@ -266,7 +267,7 @@ function register(){
     }
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/userExist",
+        url: urlWebsite + "/userExist",
         type: "GET",
         async: false,
         data:{
@@ -284,7 +285,7 @@ function register(){
     }
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/emailExist",
+        url: urlWebsite + "/emailExist",
         type: "GET",
         async: false,
         data:{
@@ -303,7 +304,7 @@ function register(){
 
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/register",
+        url: urlWebsite + "/register",
         type: "POST",
         async: false,
         data:{
@@ -314,7 +315,7 @@ function register(){
             "password":password
         },
         success: function (response) {
-            window.location.replace("https://scascian2.alwaysdata.net/#!/registration-successful");
+            window.location.replace(urlWebsite + "/#!/registration-successful");
         }
     });
 }
@@ -327,7 +328,7 @@ function login(){
     let success = false, verification = true;
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/login",
+        url: urlWebsite + "/login",
         type: "POST",
         async: false,
         data:{
@@ -343,7 +344,7 @@ function login(){
     });
 
     if(!verification){
-        window.location.replace("https://scascian2.alwaysdata.net/#!/not-verified");
+        window.location.replace(urlWebsite + "/#!/not-verified");
         return;
     }
 
@@ -352,7 +353,7 @@ function login(){
         document.getElementById("labelLogin").innerHTML =  '<p class="text-danger">Incorrect username or password</p>';
         return;
     }
-    window.location.replace("https://scascian2.alwaysdata.net");
+    window.location.replace(urlWebsite + "");
 
 }
 
@@ -363,7 +364,7 @@ function verify(){
     let success=false;
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/verify",
+        url: urlWebsite + "/verify",
         type: "POST",
         async: false,
         data:{
@@ -390,14 +391,14 @@ function verify(){
         return;
     }
 
-    window.location.replace("https://scascian2.alwaysdata.net");
+    window.location.replace(urlWebsite + "");
 }
 
 //sends a reset password email to the specified email address
 function resetPasswordEmail(){
     let username = document.getElementById("usrReset").value;
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/resetPasswordEmail",
+        url: urlWebsite + "/resetPasswordEmail",
         type: "POST",
         async: false,
         data:{
@@ -416,7 +417,7 @@ function resetLink(){
     let success=false;
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/isResetRequested",
+        url: urlWebsite + "/isResetRequested",
         type: "GET",
         async: false,
         data:{
@@ -444,7 +445,7 @@ function resetLink(){
         return;
     }
 
-    window.location.replace("https://scascian2.alwaysdata.net");
+    window.location.replace(urlWebsite + "");
 }
 
 //resets a user's password
@@ -460,7 +461,7 @@ function resetPassword() {
     }
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/resetPassword",
+        url: urlWebsite + "/resetPassword",
         type: "POST",
         async: false,
         data:{
@@ -469,7 +470,7 @@ function resetPassword() {
         },
         success: function (response) {
             alert("Your password has been changed! You will now be redirected to the login page");
-            window.location.replace("https://scascian2.alwaysdata.net/#!/login");
+            window.location.replace(urlWebsite + "/#!/login");
         }
     });
 
@@ -487,7 +488,7 @@ function sendSupport(){
         return;
     }
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/sendSupport",
+        url: urlWebsite + "/sendSupport",
         type: "POST",
         async: false,
         data:{
@@ -497,7 +498,7 @@ function sendSupport(){
         },
         success: function (response) {
             alert("An email has been sent, we will reply as soon as possible to the email address provided in order to help you with your problem.");
-            window.location.replace("https://scascian2.alwaysdata.net");
+            window.location.replace(urlWebsite + "");
         }
     });
 }
@@ -524,7 +525,7 @@ function addGame(){
     }
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/addGame",
+        url: urlWebsite + "/addGame",
         type: "POST",
         async:false,
         data: {
@@ -553,7 +554,7 @@ function addGame(){
 function deleteGame(item) {
     if (confirm("Do you really want to delete this game? \nThis action is irreversible and the game\nwill be permanently deleted.")) {
         $.ajax({
-            url: "https://scascian2.alwaysdata.net/deleteGame",
+            url: urlWebsite + "/deleteGame",
             type: "POST",
             async: false,
             data: {

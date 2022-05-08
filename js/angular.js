@@ -8,9 +8,9 @@ app.controller('selectionCtrl', function ($scope, $http) {
         let descResponse, descHidden, descVisible, urlSelectGame, videoID;
         let id = "id" + event.target.id.replace("img", "").replace("title", "").replace("card", "");
         if(document.getElementById(id).innerText.indexOf("TGZ")!=-1)
-            urlSelectGame =  "https://scascian2.alwaysdata.net/selectGameMongo";
+            urlSelectGame =  urlWebsite + "/selectGameMongo";
         else
-            urlSelectGame =  "https://scascian2.alwaysdata.net/selectGame";
+            urlSelectGame =  urlWebsite + "/selectGame";
         let price;
         $http({
             url: urlSelectGame,
@@ -127,7 +127,7 @@ app.controller('selectionCtrl', function ($scope, $http) {
         let purchaseHistory ={}, purchaseTable = "";
 
         await $http({
-            url: "https://scascian2.alwaysdata.net/getInfoAccount",
+            url: urlWebsite + "/getInfoAccount",
             method: "POST",
         }).then(function (response) {
             $scope.email = response.data.email;
@@ -173,7 +173,7 @@ app.controller('selectionCtrl', function ($scope, $http) {
         let cart ={}, cartTable = "", total=0.0;
         document.getElementById("btnPurchaseCartItems").style.visibility="hidden";
         await $http({
-            url: "https://scascian2.alwaysdata.net/getInfoAccount",
+            url: urlWebsite + "/getInfoAccount",
             method: "POST",
         }).then(function (response) {
             cart = response.data.cart;
@@ -240,7 +240,7 @@ app.controller('selectionCtrl', function ($scope, $http) {
     $scope.getGamesList = async function () {
         let data, gamesTable = "";
         await $http({
-            url: "https://scascian2.alwaysdata.net/getGamesList",
+            url: urlWebsite + "/getGamesList",
             method: "GET",
         }).then(function (response) {
             data = response.data;

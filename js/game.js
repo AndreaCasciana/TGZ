@@ -74,19 +74,19 @@ function searchGame(type, query){
     $("#carousels").fadeOut(500);
 
     if(type == 0) {
-        urlQuery = "https://scascian2.alwaysdata.net/searchGame";
+        urlQuery = urlWebsite + "/searchGame";
         stringQuery = document.getElementById("search").value;
     }
     else if(type == 1){
-        urlQuery = "https://scascian2.alwaysdata.net/browseCategory";
+        urlQuery = urlWebsite + "/browseCategory";
         stringQuery = query;
     }
     else if(type == 2){
-        urlQuery = "https://scascian2.alwaysdata.net/browseTheme";
+        urlQuery = urlWebsite + "/browseTheme";
         stringQuery = query;
     }
     else if(type == 3){
-        urlQuery = "https://scascian2.alwaysdata.net/Shooters";
+        urlQuery = urlWebsite + "/Shooters";
         stringQuery = query;
     }
 
@@ -179,8 +179,8 @@ function displayQuery(offset){
 
     for (let j = idxOffset, i = 0; i < nCards; i++, j++) {
 
-        if (dataResponse[j].name.length > 25)
-            document.getElementById("titleQuery" + (i + 1).toString().replace(/^0/, '')).innerText = dataResponse[j].name.slice(0, 24) + "...";
+        if (dataResponse[j].name.length > 17)
+            document.getElementById("titleQuery" + (i + 1).toString().replace(/^0/, '')).innerText = dataResponse[j].name.slice(0, 16) + "...";
         else
             document.getElementById("titleQuery" + (i + 1).toString().replace(/^0/, '')).innerText = dataResponse[j].name;
         document.getElementById("idQuery" + (i + 1).toString().replace(/^0/, '')).innerText = dataResponse[j].id;
@@ -210,12 +210,12 @@ function addToCart(){
     let price = document.getElementById("price").innerText.split(" ")[0];
     let isAlreadyInCart = false, loggedIn = true;
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/isLoggedIn",
+        url: urlWebsite + "/isLoggedIn",
         type: "POST",
         async:false,
         success: function (data) {
             if (data == false){
-                window.location.replace("https://scascian2.alwaysdata.net/#!/login");
+                window.location.replace(urlWebsite + "/#!/login");
                 loggedIn = false;
             }
         }
@@ -225,7 +225,7 @@ function addToCart(){
         return;
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/isItemInCart",
+        url: urlWebsite + "/isItemInCart",
         type: "POST",
         async:false,
         data: {
@@ -243,7 +243,7 @@ function addToCart(){
         return;
 
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/addToCart",
+        url: urlWebsite + "/addToCart",
         type: "POST",
         async:false,
         data: {
@@ -259,7 +259,7 @@ function addToCart(){
 //it removes the item from the user's cart
 function removeFromCart(item) {
     $.ajax({
-        url: "https://scascian2.alwaysdata.net/removeFromCart",
+        url: urlWebsite + "/removeFromCart",
         type: "POST",
         async:false,
         data: {
